@@ -1,5 +1,7 @@
-from flask import Flask, request, redirect, render_template
+from flask import Flask, request, redirect, render_template, session
 from flask_sqlalchemy import SQLAlchemy
+import cgi
+import os
 
 app = Flask(__name__)
 app.config['DEBUG'] = True
