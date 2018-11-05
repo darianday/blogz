@@ -1,21 +1,25 @@
-<!DOCTYPE html>
+<!doctype html>
 <html>
-<head>
-    <title>{{title}}</title>
-    <style>
-        h1{
-            text-align: center;
-        }
-        .error{
-            color: red;
-        }
-    </style>
-</head>
+    <head>
+        <title>Blogz</title>
+        <nav>
+            <a href="/">Home</a>
+            <a href="/blog">All Posts</a> 
+            <a href="/newpost">New Post</a>
+            <a href="/login">Login</a> 
+            <a href="/logout">Logout</a>
+            
+
+        </nav> 
+        
+        <div align= "center">
+        <form><h1>Blogz</h1>
+        </form>
+        </div>
+
+    </head>
 <body>
-    <nav>
-        <a href="/blog">Main Blog Page</a> | 
-        <a href="/newpost">Add a Blog Entry</a>
-    </nav>
+    
 
     {% block content %}
     {% endblock %}
